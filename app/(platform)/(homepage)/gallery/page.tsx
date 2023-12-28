@@ -55,19 +55,19 @@ const GalleryPage = () => {
   };
 
   return (
-    <div className="flex items-center justify-center h-screen">
+    <div className="flex items-center mt-72 md:mt-16 lg:mt-0 justify-center h-screen">
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-4 gap-y-8 mt-10 p-4 sm:p-10 ">
         {images.map((image) => (
           <div key={image.id} className="relative group">
             <Image
               src={image.src}
               alt={`Image ${image.id}`}
-              className="object-cover w-full h-48 md:w-[400px] md:h-[300px]"
+              className="object-cover w-full h-48 lg:w-[400px] md:w-[350px] md:h-[300px]"
               width={512}
               height={512}
             />
-            <div className="absolute top-0 left-0 w-full h-48 md:w-[400px] md:h-[300px] flex items-center justify-center opacity-0 transition-opacity duration-300 group-hover:opacity-100">
-              <div className="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center">
+            <div className="absolute top-0 left-0 w-full h-48 lg:w-[400px] md:w-[350px] md:h-[300px] flex items-center justify-center opacity-0 transition-opacity duration-300 group-hover:opacity-100">
+              <div className="object-cover absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center">
                 <div className="text-white text-center p-4 rounded">
                   <Button
                     onClick={() => handleDownload(image.id, image.src)}
