@@ -31,7 +31,7 @@ const ChatPage = () => {
     <div className="fixed mt-10 w-full mb-1 p-4 bg-white border-t flex flex-col items-center justify-center">
       <iframe
         seamless
-        src="https://dac4c11a95b800beda.gradio.live/"
+        src="https://cfac71a302be8ae52d.gradio.live"
         // Manojkumar
         width={iframeWidth}
         height={iframeHeight}
